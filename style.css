@@ -1,0 +1,338 @@
+/* header */
+
+.header{
+    background-color: #000;
+}
+.header-logo{}
+.header-logo img{
+    width: 115px;
+    margin: 15px;
+}
+.header-manu{}
+.header-manu ul{
+    text-align:right;
+    margin: 0;
+    padding: 0;
+}
+.header-manu ul li{
+    display: inline-block;
+}
+.header-manu ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 31px 40px;
+    font-size: 27px;
+}
+
+.hovereffact::after{
+    content: "";
+    width: 0;
+    left: 0;
+    top: 0;
+    display: block;
+    height: 2px;
+    background: #fff
+}
+.hovereffact:hover::after {
+    width: 100%;
+    transition: .5s;
+}
+
+
+/* dropeDown css */
+
+
+.header-manu ul li{
+    position: relative;
+}
+.header-manu ul li ul {
+    position: absolute;
+    left: -35px;
+    top: 100%;
+    width: 270px;
+    background-color: rgb(3, 3, 3);
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.header-manu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+.header-manu ul li ul li{}
+.header-manu ul li ul li a {
+    position: relative;
+    top: 0;
+    left: 0px;
+    padding-right: 137px;
+    padding-top: 0px;
+}
+.header-manu ul li ul li a:hover{
+    background: #fff;
+    color: #000;
+}
+
+.hovereffact2::after{
+    content: "";
+    width: 0;
+    left: 0;
+    top: 0;
+    display: block;
+    height: 2px;
+    background: rgb(3, 3, 3)
+}
+.hovereffact2:hover::after {
+    width: 100%;
+    transition: .5s;
+}
+
+
+/* baner css */
+
+.baner{
+    background-image: url(./Image/a0c6042d4612d7adf44692fffac7e082.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 260px 0;
+}
+.baner-text{}
+.baner-text h1{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 45px;
+    color: #303030;
+}
+.baner-text p{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.btn1 {
+    background: #000;
+    color: #fff;
+    /* border: none; */
+    padding: 20px 48px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: .5s;
+}
+.btn2{
+    background: rgb(255, 255, 255);
+    color: rgb(3, 3, 3);
+    margin-right: 12px;
+    border: none;
+    padding: 20px 48px;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-left: 15px;
+    transition: .5s;
+}
+
+.btn1:hover{
+    background: #fff;
+    color: #000;
+}
+.btn2:hover{
+    background: #000;
+    color: #fff;
+}
+
+/* about css */
+
+.about {
+    background: #87a471;
+    padding: 70px 0;
+}
+.about h1{
+    margin-bottom: 40px;
+    font-size: 54px;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    display: inline-block;
+    padding: 10px 0;
+    text-shadow: 2px 2px 7px #fff;
+}
+.about-text{
+    text-align: left;
+    width: 600px;
+}
+.about-text p{
+    color: #fff;
+    position: relative;
+    top: 0;
+    left: 120px;
+}
+.about-imag{
+}
+.about-imag img{
+    width: 260px;
+}
+
+/* service css */
+
+.service{
+    background: #606a64;
+    padding: 70px 0;
+}
+.service-text{}
+.service-text h1{
+    margin-bottom: 15px;
+    font-size: 54px;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    display: inline-block;
+    padding: 10px 0;
+    text-shadow: 2px 2px 7px #fff;
+}
+.service-text h2{
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.service-text p{
+    color: #fff;
+    width: 800px;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.service-item {
+    text-align: left;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    margin-left: 57px;
+}
+
+.service-icon img{
+    width: 45px;
+}
+
+/* work css */
+
+.work{
+    background: #87a471;
+    padding: 70px 0;
+}
+.work-head{
+    color: #fff;
+}
+.work-head h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.work-head p{
+    font-size: 20px;
+    margin-bottom: 70px;
+}
+
+.work-simple{
+    border: 1px solid #fff;
+}
+.work-simple img{
+    width: 634px;
+}
+.work-simple p{
+    color: #506a85;
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.work-simple h4{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.work-simple2 {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.work-simple2 img {
+    width: 300px;
+}
+
+/* teem  css */
+
+.teem {
+    background: #5b9776;
+    padding: 70px 0;
+}
+.teem-head {}
+.teem-head h1 {
+    color: #fff;
+    text-transform: uppercase;
+}
+.divs {
+    width: 300px;
+    height: 4px;
+    background: #a6bdab;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.teem-member{}
+.teem-member img{}
+.iconet{}
+.iconet i {
+    color: #fff;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.iconet i:hover{
+    color: #9a9c9b;
+    transition: .5s;
+}
+
+/* works css */
+
+.works{
+    background: #606a64;
+    padding: 100px 0;
+}
+.works-head{}
+.works-head h1{
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.works-head p {
+    color: #fff;
+    margin-bottom: 20px;
+    width: 800px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.btton button{
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    background: #00bc9c;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.btton button:hover{
+    background: #373d8c;
+    transition: .5s;
+}
+
+/* footer css */
+
+.footer{
+    background: #000;
+    
+}
+.footer-text p {
+    color: #fff;
+    margin: auto;
+    padding: 25px 0;
+    font-size: 21px;
+}
